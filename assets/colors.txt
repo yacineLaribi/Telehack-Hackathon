@@ -1,0 +1,18 @@
+:root{--var:;}
+
+
+black :
+	#16161B
+	#0B0D0F
+	#000000
+
+orange:
+	#FF9B34
+
+white:
+	#FFFFFF
+
+grey for paragraphs :
+
+	#DADADA
+
