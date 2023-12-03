@@ -1,0 +1,62 @@
+@import url("style.css");
+body {
+  background-image: url("assets/Ellipse\ 15.png"), url("assets/Ellipse\ 13.png"),
+    url("assets/Ellipse\ 14.png"), url("assets/Ellipse\ 16.png"),
+    url("assets/Ellipse\ 13.png");
+}
+header {
+  margin-bottom: 5%;
+}
+main {
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+  gap: 2rem;
+}
+main .contact-container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3rem;
+  width: 50%;
+  max-height: 500px;
+}
+form {
+  color: black;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 45px 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 500px;
+  gap: 1rem;
+}
+form input {
+  padding: 16px 21px;
+  border-radius: 8px;
+  border: 1px solid #d7dee5;
+  background: #fff;
+  width: 90%;
+}
+h1{
+    font-size: 40px;
+    color: #fff;
+    background: none;
+  -webkit-text-fill-color: #fff;
+
+}
+label {
+  display: flex;
+  gap: 1rem;
+}
+span{
+    color: red;
+}
+input[type=submit]{
+    align-self: center;
+    font-weight: 600;
+    cursor: pointer;
+}

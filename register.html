@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register | Telehack</title>
+</head>
+
+<body id="#register">
+    <header>
+        <nav>
+            <img src="assets/logo.png" alt="logo" height="70" class="logo">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Our story</a></li>
+                <li><a href="#">Contact</a></li>
+                <button><a href="#">Join Us</a></button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="contact-container">
+            <h1>
+                Want to participate ?
+            </h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores libero fuga error! Facilis enim
+                eveniet,
+                minus autem blanditiis cumque, unde excepturi fuga, nesciunt expedita ut cum quam possimus minima
+                tempora!
+            </p>
+            <button>Get in Touch</button>
+        </div>
+        <form method="POST">
+
+            <h2>
+                Register Now
+            </h2>
+            <p>Are you in a team ?</p>
+            
+            <label>     
+                <label>
+                    <input type="radio" name="place" value="yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="place" value="no"> No
+                </label>
+            </label>
+
+            <label for="members">Number of team members</label>
+            <input type="number" name="members" placeholder="Enter the number of your team members !">
+
+            <label for="name">Full Name<span>*</span></label>
+            <input type="text" name="name" required placeholder="Enter your full name">
+
+            <label for="mail">Email<span>*</span></label>
+            <input type="mail" name="mail" required placeholder="Enter your Email adress">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter your phone number">
+
+            <label for="club">Your scientific club ?</label>
+            <input type="text" name="club" placeholder="Enter your club / association ...">
+
+            <label for="skills">Skills? <span>*</span></label>
+            <input type="text" name="skills" required placeholder="Ex: coding , web development , photography ...">
+
+            <label for="major">Major</label>
+            <input type="text" name="major" placeholder="Enter your major">
+            <label for="size">Your Size ?</label>
+            <label>
+                <label> 
+                    <input type="radio" name="size" value="S"> S
+                </label>
+                <label>
+                    <input type="radio" name="size" value="M"> M
+                </label>
+                <label>
+                    <input type="radio" name="size" value="L"> L
+                </label>
+                <label>
+                    <input type="radio" name="size" value="Xl"> XL
+                </label>
+
+            </label>
+
+            <input type="submit" value="Submit" id="sub">
+
+        </form>
+    </main>
+
+<script src="script.js"></script>
+</body>
+
+</html>
