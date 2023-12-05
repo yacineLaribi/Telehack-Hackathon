@@ -39,25 +39,54 @@ header nav {
   justify-content: space-between;
 }
 header nav ul li {
+  padding: 13px;
   display: inline;
   margin-right: 20px;
   font-family: Source Sans Pro;
   font-size: 13px;
+  overflow-x: hidden;
+  position: relative;
+
 }
 a {
   text-decoration: none;
   color: var(--basic-white);
 }
-
+header  ul li a::before{
+  content: " ";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 5px;
+  width:0%;
+  background-color: var(--second-color);
+  transition: .5s;
+}
+header  ul li a:hover{
+  color: var(--second-color);
+}
+header ul li a:hover::before{
+  width: 100%;
+}
 header nav ul button {
   display: inline-flex;
   padding: 15px 25px;
   align-items: flex-start;
   gap: 10px;
-  border: none;
   border-radius: 4px;
   background: var(--second-color);
   color: var(--basic-white);
+  box-shadow: inset 0 0 0 0 varrgba(204, 0, 37, 0.89);
+  border: 1px solid var(--second-color);
+  transition: ease-out 0.5s;
+
+
+}
+header nav ul button:hover{
+  color: white;
+  box-shadow: inset 0 -100px 0 0 rgba(204, 0, 37, 0.89);
+  border: 1px solid rgba(204, 0, 37, 0.89);
+
 }
 /*end of the header css*/
 /*responsive header*/
@@ -130,7 +159,7 @@ main {
   text-align: start;
 }
 
-.container button {
+.container .registerBtn {
   position: absolute;
   bottom: 5%;
   right: 5%;
@@ -140,14 +169,75 @@ main {
   align-items: center;
   gap: 10px;
   border: 2px solid var(--unnamed, #ee2a4d);
+  border-radius: 15px;
   background-color: transparent;
   font-size: 18px;
   font-weight: 600;
+  transition: ease-out 0.5s;
+  box-shadow: inset 0 0 0 0 var(--second-color);
+  cursor: pointer;
 }
+.container .registerBtn:hover{
+    color: white;
+    box-shadow: inset 0 -100px 0 0 var(--second-color);
+  }
+
+  
+  .registerBtn:active {
+    transform: scale(0.9);
+  }
 .container h1 {
   font-size: 28px;
   width: 80%;
 }
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: var(--second-color);
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--animation-color);
+  scale: 1.9;
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: .5px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
 h1,
 .part_one h2 {
   background: var(
@@ -189,6 +279,9 @@ h1,
     gap: 1rem;
     list-style: none;
     font-weight: 600;
+  }
+  .button{
+    display: none;
   }
 }
 /* end of part one responsive */
