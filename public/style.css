@@ -288,7 +288,7 @@ h1,
 
 /* part two css */
 .part_two {
-  padding: 0 90px;
+  padding: 0 60px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -347,10 +347,18 @@ h1,
   height: 250px;
   width: 300px;
   text-align: center;
+  border: 2px  solid transparent;
+
+  border-radius: 25px;
+  transition:  0.3s;
 }
 .part_three .theme_cards .theme_card img {
   height: 120px;
   filter: invert();
+}
+.part_three .theme_cards .theme_card:hover{
+  border: 2px  solid #fff;
+
 }
 .part_three h1 {
   color: var(--basic-white);
@@ -579,6 +587,13 @@ footer ul {
   align-items: center;
   justify-content: space-between;
   width: 20%;
+  list-style: none;
+}
+footer ul li a{
+  transition: .5s;
+}
+footer ul li a:hover circle{
+ fill:#000;
 }
 /*end of footer css*/
 /*responsive of the footer*/
