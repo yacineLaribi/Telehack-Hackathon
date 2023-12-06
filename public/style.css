@@ -21,12 +21,10 @@ body {
   color: var(--basic-white);
   background-image: url("assets/Ellipse\ 15.png"), url("assets/Ellipse\ 13.png"),
     url("assets/Ellipse\ 14.png"), url("assets/Ellipse\ 16.png"),
-    url("assets/Ellipse\ 13.png"), url("assets/Phoenix.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat;
-  background-size: 100%, 100%, 100%, 100%, 100%, 10%;
-  background-position: 100% -30vh, 0% 30vh, 100% 70vh, 100% 350vh, 0% 350vh,
-    80% 6%;
+    url("assets/Ellipse\ 13.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 100%, 100%, 100%, 100%, 100%;
+  background-position: 100% -30vh, 0% 30vh, 100% 70vh, 100% 350vh, 0% 350vh;
   overflow-x: hidden;
 }
 
@@ -350,7 +348,7 @@ h1,
   border: 2px  solid transparent;
 
   border-radius: 25px;
-  transition:  0.3s;
+ /* transition:  0.3s;*/
 }
 .part_three .theme_cards .theme_card img {
   height: 120px;
@@ -512,8 +510,8 @@ hr {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
-  margin: 5% 0 10%;
+  gap: 6rem;
+  margin: 5% 0 7%;
 }
 .part_six .sponsor_cards {
   display: flex;
@@ -524,8 +522,13 @@ hr {
 }
 .part_six .sponsor_cards .sponsor_card {
   width: 150px;
-  height: 100px;
-  background-color: #fff;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+}
+.sponsor_card img{
+  object-fit: cover;
 }
 
 /*end of part six css*/
