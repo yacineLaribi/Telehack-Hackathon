@@ -30,8 +30,14 @@ body {
 
 header {
   padding: 15px 5%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  max-width: 100%;
+  min-width: 97%;
 }
 header nav {
+  width: 90vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,7 +74,7 @@ header ul li a:hover::before{
 }
 header nav ul button {
   display: inline-flex;
-  padding: 15px 25px;
+  padding:15px 25px;
   align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
@@ -86,13 +92,54 @@ header nav ul button:hover{
   border: 1px solid rgba(204, 0, 37, 0.89);
 
 }
+
+header nav button {
+  display: inline-flex;
+  padding: 15px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 50%;
+  background: var(--second-color);
+  color: var(--basic-white);
+  box-shadow: inset 0 0 0 0 rgba(204, 0, 37, 0.89);
+  border: 1px solid var(--second-color);
+  transition: ease-out 0.5s;
+  cursor: pointer;
+}
+.menu-btn{
+  display: none;
+}
+.menu-links{
+  position: fixed;
+  top: 11%;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  gap: 3rem;
+  background-color: #09151cb5;
+  padding: 15px 5px;
+  z-index: 3;
+display: block;
+}
+.menu-links li {
+  text-align: center;
+  padding: 15px 0;
+}
+.hidden{
+  display: none;
+}
 /*end of the header css*/
 /*responsive header*/
 @media (max-width: 768px) {
+
   header nav ul {
     display: none;
   }
-  #menu-btn {
+  .menu-btn {
     display: block;
   }
 }
@@ -119,7 +166,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 5% 0 10%;
+  margin: 10% 0 10%;
   gap: 2rem;
 }
 .part_one .container {
@@ -130,7 +177,7 @@ main {
   backdrop-filter: blur(12.5px);
   position: relative;
 }
-.container header {
+.container .header {
   color: #ff5c79;
   padding: 10px 15px;
   display: flex;
@@ -138,7 +185,7 @@ main {
   justify-content: space-between;
   border-bottom: 2px solid var(--gradient-4, #ff5c79);
 }
-.container header h3 {
+.container .header h3 {
   cursor: pointer;
 }
 .container main {
@@ -255,6 +302,9 @@ h1,
 /*end of part one css*/
 /* part one responsive*/
 @media (max-width: 768px) {
+  .part_one{
+    margin-top: 30%;
+  }
   .part_one .container {
     padding: 0 0 100px 0;
   }
@@ -396,6 +446,7 @@ h1,
 }
 .part_four .round_cards .round_card {
   width: 70%;
+  min-height: 310px;
   padding: 25px;
   border: 2px dashed var(--unnamed, #ee2a4d);
   text-align: center;
@@ -536,11 +587,14 @@ hr {
 @media (max-width:768px){
   .part_six{
     padding: 0 15px;
+    padding: 2rem;
   }
   .part_six .sponsor_cards {
     display: grid;
     grid-template-columns:auto auto ;
-    gap: 1rem;
+  }
+  .sponsor_card img{
+    height: 200px;
   }
 }
 /*end of responsive of part six*/
@@ -612,6 +666,9 @@ footer ul li a:hover circle{
   footer ul{
     width: 90%;
     justify-content: space-evenly;
+  }
+  footer h4{
+    font-size: 10px;
   }
 }
 

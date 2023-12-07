@@ -1,9 +1,5 @@
 @import url("style.css");
-body {
-  background-image: url("assets/Ellipse\ 15.png"), url("assets/Ellipse\ 13.png"),
-    url("assets/Ellipse\ 14.png"), url("assets/Ellipse\ 16.png"),
-    url("assets/Ellipse\ 13.png");
-}
+
 header {
   margin-bottom: 5%;
 }
@@ -12,6 +8,7 @@ main {
   align-items: flex-start;
   max-width: 100%;
   gap: 2rem;
+  margin-top:200px ;
 }
 main .contact-container {
   margin-top: 5%;
