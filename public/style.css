@@ -590,11 +590,12 @@ hr {
     padding: 2rem;
   }
   .part_six .sponsor_cards {
+    max-width: 80vw;
     display: grid;
-    grid-template-columns:auto auto ;
+    grid-template-columns:auto auto;
   }
   .sponsor_card img{
-    height: 200px;
+    height: 170px;
   }
 }
 /*end of responsive of part six*/
