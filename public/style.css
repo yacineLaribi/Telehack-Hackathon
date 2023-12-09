@@ -10,7 +10,7 @@
 *::after {
   padding: 0;
   margin: 0;
-  font-family: JetBrains Mono;
+  font-family: JetBrains Mono !important;
 }
 h1{
   color: #fff;
