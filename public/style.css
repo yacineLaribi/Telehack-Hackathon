@@ -26,6 +26,7 @@ body {
   background-size: 100%, 100%, 100%, 100%, 100%;
   background-position: 100% -30vh, 0% 30vh, 100% 70vh, 100% 350vh, 0% 350vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body::after{
   display: none;
