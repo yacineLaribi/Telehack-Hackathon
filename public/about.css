@@ -57,6 +57,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     /* align-items: center; */
+    padding: 0 0 15px 0;
 }
 .container .info{
     width: 90%;
@@ -106,6 +107,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0 0 15px 0;
+
 }
 .container .grid-items4{
     border: 2px solid #FFF;
@@ -220,4 +223,7 @@ body{
     .about-footer .icons{
         width: 50%;
     }
+}
+svg{
+    cursor: pointer;
 }
