@@ -556,7 +556,7 @@ hr {
 
 /*part six css*/
 .part_six {
-  max-width: 100vw;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -586,17 +586,18 @@ hr {
 /* responsive of part six*/
 @media (max-width:768px){
   .part_six{
-    padding: 0 15px;
-    padding: 2rem;
+    padding: 0px;
+    max-width: 100vw;
   }
-  .part_six .sponsor_cards {
-    max-width: 80vw;
+  .part_six .sponsor_cards{
+    max-width: 100%;
     display: grid;
-    grid-template-columns:auto auto;
+    grid-template-columns: auto auto;
   }
   .sponsor_card img{
     height: 170px;
   }
+
 }
 /*end of responsive of part six*/
 
